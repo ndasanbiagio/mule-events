@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<flow name="read-uri-params-demoFlow" doc:id="e61eed37-b21a-4587-9444-57a9a4a2d6fc" >
+		<http:listener doc:name="Listener" doc:id="ab2c30d6-64d8-4fb7-ab4e-0c2efc0c201c" config-ref="HTTP_Listener_config" path="read-uri-params/{emplID}/{empName}/{empStatus}"/>
+		<logger level="INFO" doc:name="Logger" doc:id="588e4c65-b66c-416c-8120-63b12e65dad0" message="#[attributes.uriParams.empID]"/>
+	</flow>
+</mule>

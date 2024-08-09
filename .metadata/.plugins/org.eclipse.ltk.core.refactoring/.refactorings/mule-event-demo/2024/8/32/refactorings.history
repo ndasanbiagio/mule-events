@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;mule-event-demo/src/main/mule/mule-event-demo.xml&apos; to &apos;read-json-demo.xml&apos;" description="Rename resource &apos;mule-event-demo.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/mule/mule-event-demo.xml" name="read-json-demo.xml" stamp="1723152420728" updateReferences="true"/>
+</session>
